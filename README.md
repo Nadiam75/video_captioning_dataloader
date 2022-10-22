@@ -1,5 +1,9 @@
 # video_captioning_dataloader
 
+According to [PyTorch Documentation](https://pytorch.org/tutorials/beginner/basics/data_tutorial.html),
+the code for processing data samples can get messy and hard to maintain; we ideally want our dataset code to be decoupled from our model training code for better readability and modularity. PyTorch provides two data primitives: torch.utils.data.DataLoader and torch.utils.data.Dataset that allow you to use pre-loaded datasets as well as your own data. Dataset stores the samples and their corresponding labels, and DataLoader wraps an iterable around the Dataset to enable easy access to the samples.
+Also, we can benefit from PyTorch domain libraries which provide a number of pre-loaded datasets (such as FashionMNIST) that subclass torch.utils.data.Dataset and implement functions specific to the particular data. They can be used to prototype and benchmark your model.
+
 ## requirements
 - cv2
 - csv
@@ -19,6 +23,9 @@
 by changing DISPLAY_FRAMES and SAVE_FRAMES into True or False you can chooses to save the sampled frames in a folder or to display them.
 
 
+``` shell
+python dataloader.py
+```
 
 ## The weaknesses:
 
