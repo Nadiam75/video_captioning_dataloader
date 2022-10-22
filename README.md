@@ -22,10 +22,12 @@ Also, we can benefit from PyTorch domain libraries which provide a number of pre
 
 by changing DISPLAY_FRAMES and SAVE_FRAMES into True or False you can chooses to save the sampled frames in a folder or to display them.
 
-
+Also to run the .py file :
 ``` shell
 python dataloader.py
 ```
+
+The .ipynb version has also been uploaded in the repository.
 
 ## The weaknesses:
 
