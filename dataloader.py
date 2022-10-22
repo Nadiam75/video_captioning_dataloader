@@ -49,9 +49,9 @@ def frame_sampling(video_path, vid_capture, number_of_samples, frame_count):
 
             elif not DISPLAY_FRAMES and SAVE_FRAMES:
                 save_path = ('sampled_frames/' + video_path.replace('.mp4', '')) + ("frame_%d.jpg" % count)
+                cv2.imwrite(save_path, frame)
                 all_frames.append(new_frame)
                 saved_path_list.append(save_path)
-                cv2.imwrite(save_path, frame)
 
             elif DISPLAY_FRAMES and not SAVE_FRAMES:
                 all_frames.append(new_frame)
