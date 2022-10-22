@@ -16,8 +16,11 @@ Also, we can benefit from PyTorch domain libraries which provide a number of pre
 
 ## data
 
-5 videos of varying sizes are uploaded in the repository
-
+a .csv file contains the path to 5 videos and their corresponding caption.
+by iterating through this file and  each video is loaded.
+at the next stage, a dataframe is created in which each row contains an array of size (N*H*W*C) and a caption.
+A class named 'MovieCaptioningDataset' is created which inherits its properties from torch.utils.data's Dataset class.
+An instance of this class is generated for the training and validation data containing the model's input and output.
 ## usage
 
 by changing DISPLAY_FRAMES and SAVE_FRAMES into True or False you can chooses to save the sampled frames in a folder or to display them.
