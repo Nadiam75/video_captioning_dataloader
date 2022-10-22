@@ -14,6 +14,9 @@
 
 5 videos of varying sizes are uploaded in the repository
 
+## usage
+
+by changing DISPLAY_FRAMES and SAVE_FRAMES into True or False you can chooses to save the sampled frames in a folder or to display them.
 
 
 
@@ -32,3 +35,9 @@
 **Solution:**
 
 this can be solved by Albumentations library using which we can resize every input frame into a constant Height and Width and perform various kind of transforms on the sampled video frames.
+
+
+
+## contact:
+nadia.meskar@yahoo.com
+zahra_meskar@ee.sharif.edu
