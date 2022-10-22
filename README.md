@@ -24,6 +24,7 @@ An instance of this class is generated for the training and validation data cont
 ## usage
 
 by changing DISPLAY_FRAMES and SAVE_FRAMES into True or False you can chooses to save the sampled frames in a folder or to display them.
+NUM_OF_SAMPLES determines the number of samples taken from each video.
 
 Also to run the .py file :
 ``` shell
@@ -52,4 +53,5 @@ this can be solved by Albumentations library using which we can resize every inp
 
 ## contact:
 nadia.meskar@yahoo.com
+
 zahra_meskar@ee.sharif.edu
